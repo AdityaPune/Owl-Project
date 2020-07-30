@@ -109,18 +109,18 @@ def test_threshold(args):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Cleaning audio data')
-    parser.add_argument('--src_root', type=str, default='Audio',
+    parser.add_argument('--src_root', type=str, default='NewAudio',
                         help='directory of audio files in total duration')
-    parser.add_argument('--dst_root', type=str, default='clean',
+    parser.add_argument('--dst_root', type=str, default='newclean',
                         help='directory to put audio files split by delta_time')
     parser.add_argument('--delta_time', '-dt', type=float, default=1.0,
                         help='time in seconds to sample audio')
     parser.add_argument('--sr', type=int, default=16000,
                         help='rate to downsample audio')
 
-    parser.add_argument('--fn', type=str, default='XC107110 - Brown Fish Owl - Ketupa zeylonensis',
+    parser.add_argument('--fn', type=str, default='XC165409 - Collared Scops Owl - Otus lettia',
                         help='file to plot over time to check magnitude')
-    parser.add_argument('--threshold', type=str, default=100,
+    parser.add_argument('--threshold', type=str, default=10,
                         help='threshold magnitude for np.int16 dtype')
     args, _ = parser.parse_known_args()
 
