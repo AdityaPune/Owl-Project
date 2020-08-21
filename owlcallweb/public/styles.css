@@ -1,0 +1,51 @@
+html, body {
+  background-color: #fdfffb;
+  height: 100%;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  height: 100%;
+}
+
+.top {
+  height: 20%;
+  /* background-color: seagreen; */
+  padding: 5vh;
+}
+
+.status {
+  height: 20%;
+  /* background-color: blueviolet; */
+  padding: 5vh;
+}
+
+#controls {
+  height: 10%;
+  /* background-color: rosybrown; */
+  padding: 2vh;
+} 
+
+.content {
+  height: 50%;
+  /* background-color: greenyellow; */
+  padding: 2vh;
+}
+
+h1 {
+  font-family: 'Bowlby One';
+  color: #9b5a00;
+}
+
+h5 {
+  font-family: 'Monaco';
+  color: #271700;
+}
+
+p {
+  font-family: 'Monaco';
+  color: #271700;
+}
